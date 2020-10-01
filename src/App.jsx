@@ -1,13 +1,13 @@
 import React from 'react';
 
+import Container from 'react-bootstrap/Container';
+
 import TwitterIcon from './Icons/twitter.svg';
 import GithubIcon from './Icons/github.svg';
 
-import styles from './styles.css';
-
 const App = () => (
-  <div>
-    <h1 className={styles.title}>Titles</h1>
+  <Container>
+    <h1>Titles</h1>
     <ul>
       <li>
         <TwitterIcon width="40px" height="40px" />
@@ -18,7 +18,7 @@ const App = () => (
         <a href="https://github.com/rwieruch">Github</a>
       </li>
     </ul>
-  </div>
+  </Container>
 );
 
 export default App;
