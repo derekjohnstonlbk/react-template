@@ -3,8 +3,11 @@ import React from 'react';
 import TwitterIcon from './Icons/twitter.svg';
 import GithubIcon from './Icons/github.svg';
 
+import styles from './styles.css';
+
 const App = () => (
   <div>
+    <h1 className={styles.title}>Titles</h1>
     <ul>
       <li>
         <TwitterIcon width="40px" height="40px" />
