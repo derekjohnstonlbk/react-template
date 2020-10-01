@@ -2,14 +2,14 @@ const webpack = require("webpack");
 
 module.exports = {
 	// The entry point.
-	entry: "./src/index.js",
+	entry: "./src/index.jsx",
 	
 	// Configure the Babel loader.
 	module: {
 		rules: [{
 			test: /\.(js|jsx)$/,
 			exclude: /node_modules/,
-			use: ["babel-loader"]		
+			use: ["babel-loader", "eslint-loader"]		
 		}]
 	},
 	
