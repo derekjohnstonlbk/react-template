@@ -1,33 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
-const Button = styled.button`
-  cursor: pointer;
-  background: transparent;
-  font-size: 16px;
-  border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  transition: 0.5s all ease-out;
-  
-  &:hover {
-    background-color: palevioletred;
-    color: white;
-  }
-`;
+import TwitterIcon from './Icons/twitter.svg';
+import GithubIcon from './Icons/github.svg';
 
-const App = ({ title }) => (
+const App = () => (
   <div>
-    { title }
-    <Button>I am a Button</Button>
+    <ul>
+      <li>
+        <TwitterIcon width="40px" height="40px" />
+        <a href="https://twitter.com/rwieruch">Twitter</a>
+      </li>
+      <li>
+        <GithubIcon width="40px" height="40px" />
+        <a href="https://github.com/rwieruch">Github</a>
+      </li>
+    </ul>
   </div>
 );
-
-App.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default App;

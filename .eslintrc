@@ -2,9 +2,10 @@
 	"parser": "babel-eslint",
 	"extends": ["airbnb"],
 	"rules": {
-		"max-len": [1, 70, 2, {ignoreComments: true}]
+		"max-len": [1, 70, 2, {"ignoreComments": true}]
 	},
 	"env": {
-		"browser": true
+		"browser": true,
+		"node": true
 	}
 }
